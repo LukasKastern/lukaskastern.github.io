@@ -152,3 +152,16 @@ A client that wants to get the frames of the game can then use the SDK that is p
 
 This SDK then communicates with the target app using a shared memory object. 
 The frames are exported using opaque_fd handles and can be imported by the client without having to move the data to the CPU.
+
+## Contact
+
+<a href="mailto:kasternlukas@gmail.com">Send a mail</a>
+
+<a href="https://github.com/LukasKastern">Github</a>
+
+<a href="https://www.linkedin.com/in/lukas-kastern-080361187/">LinkedIn</a>
+
+
+## Thanks
+
+Thanks to <a href="https://wickstrom.tech/">Oskar Wickstroem</a> for the template this page is based on!
