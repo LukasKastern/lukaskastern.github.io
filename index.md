@@ -1,9 +1,9 @@
 ---
-title: The Monospace Web
-subtitle: A minimalist design exploration
-author: Oskar Wickström
-author-url: "https://wickstrom.tech"
-date: 2024-08-26
+title: Lukas's Portfolio
+subtitle: Self-taught Systems Developer
+author: Lukas Kastern
+author-url: "https://github.com/LukasKastern"
+date: 2024-08-28
 lang: en
 toc-title: Contents
 version: v0.1.0
@@ -11,216 +11,144 @@ version: v0.1.0
 
 ## Introduction
 
-Monospace fonts are dear to many of us. 
-Some find them more readable, consistent, and beautiful, than their proportional alternatives.
-Maybe we're just brainwashed from spending years in terminals?
-Or are we hopelessly nostalgic?
-I'm not sure.
-But I like them, and that's why I started experimenting with all-monospace Web.
+Welcome to my page! My name's Lukas. I'm a self taught Systems Developer located in Berlin, Germany. 
+On this site you can find my past experience and some of the projects I've worked on. 
 
-On this page, I use a monospace grid to align text and draw diagrams.
-It's generated from a simple Markdown document (using Pandoc), and the CSS and a tiny bit of Javascript renders it on the grid.
-The page is responsive, shrinking in character-sized steps.
-Standard elements should _just work_, at least that's the goal.
-It's semantic HTML, rendered as if we were back in the 70s.
-
-All right, but is this even a good idea?
-It's a technical and creative challenge and I like the aestethic.
-If you'd like to use it, feel free to fork or copy the bits you need, respecting the license.
-I might update it over time with improvements and support for more standard elements.
-
-## The Basics
-
-This document uses a few extra classes here and there, but mostly it's just markup.
-This, for instance, is a regular paragraph.
-
-Look at this horizontal break:
-
-<hr>
-
-Lovely. We can hide stuff in the `<details`> element:
-
-<details>
-<summary>A short summary of the contents</summary>
-<p>Hidden gems.</p>
-</details>
-
-## Lists
-
-This is a plain old bulleted list:
-
-* Banana
-* Paper boat
-* Cucumber
-* Rocket
-
-Ordered lists look pretty much as you'd expect:
-
-1. Goals
-1. Motivations
-    1. Intrinsic
-    1. Extrinsic
-1. Second-order effects
-
-It's nice to visualize trees.
-This is a regular unordered list with a `tree` class:
-
-<ul class="tree"><li><p style="margin: 0;"><strong>/dev/nvme0n1p2</strong></p>
-
-* usr                               
-    * local                         
-    * share                         
-    * libexec                       
-    * include                       
-    * sbin                          
-    * src                           
-    * lib64                         
-    * lib                           
-    * bin                           
-    * games                         
-        * solitaire
-        * snake
-        * tic-tac-toe
-    * media                         
-* media                             
-* run                               
-* tmp                               
-
-</li></ul>
-
-## Tables
-
-We can use regular tables that automatically adjust to the monospace grid.
-They're responsive. 
+## Experience
 
 <table>
 <thead>
   <tr>
-    <th class="width-min">Name</th>
-    <th class="width-auto">Dimensions</th>
-    <th class="width-min">Position</th>
+    <th class="width-min">Company</th>
+    <th class="width-min">Role</th>    
+    <th class="width-auto">Description</th>
+    <th class="width-min">End Date</th>
   </tr>
 </thead>
 <tbody>
+<tr>
+    <td><a href="https://waitlist.highscore.com/">Highscore</a></td>
+    <td>Software Engineer</td>
+    <td>
+* Implemented SPS/PSS h264 field parsing
+
+* Added windows audio capturing, encoding, streaming and playback to existing cloud gaming stack
+    </td>
+    <td>Present</td>
+</tr>
+
+<tr>
+    <td>One Dawn Studios, LLC</td>
+    <td>Co-Founder</td>
+    <td>
+* Developed gameplay code as the sole software developer on top of Unity's data-oriented technology stack
+
+* Build various tools to aid level designers in findings and optimizing performance hotspots
+
+* Used azure and playfab to integrate player profiles, economy (in-game items), matchmaking and container based game servers
+
+* Customized various Unity packages to workaround and fix bugs in the experimental data-oriented stack
+
+* Created replay system on top of Unity's Netcode allowing players to rewatch matches
+    </td>
+    <td>Present</td>
+</tr>
+
+<tr>
+  <td><a href="https://www.journee.ai/">Journee</td>
+  <td>Systems Developer</td>
+  <td>
+* Debugged and patches issues in wine proton
+
+* Build <a href="https://github.com/AvaloniaUI/Avalonia">AvaloniaUI</a> based tool to simplify artists/developer workflows on the platform
+
+* Created engine agnostic SDK for games running on our platform
+
+* Developed cross-platform streamer application over the web-rtc protocol
+  * Hardware encoder integrations
+  * Video capturing using DLL injection and detouring
+
+* Designed and implemented an eventual consistent multiplayer stack for non-competetive games with client authority
+
+* Built Unreal plugin to easily allow reusing features across projects
+  * Video areas
+  * Character controller
+  * Netcode
+  * Artist tools
+  * etc
+
+* Supported the development of various projects built for clients such as BMW, Bitkom and H&M
+
+* Implemented Unreal integration for <a href="https://www.photonengine.com/realtime">Photon Realtime</a>
+
+* Ported existing conference experience stack from Unity to Unreal
+
+</td>
+<td>Aug. 2023</td>
+</tr>
+
   <tr>
-    <td>Boboli Obelisk</td>
-    <td>1.41m &times; 1.41m &times; 4.87m</td>
-    <td>43°45'50.78"N 11°15'3.34"E</td>
-  </tr>
-  <tr>
-    <td>Pyramid of Khafre</td>
-    <td>215.25m &times; 215.25m &times; 136.4m</td>
-    <td>29°58'34"N 31°07'51"E</td>
-  </tr>
+    <td><a href="https://www.journee.ai/">Journee</td>
+    <td>Software Dev Intern</td>
+    <td>
+* Debugged bitrate and encoding related issues in Unity's render streaming stack
+
+* Evaluated and integrated various Unity video playback plugins
+
+* Implemented content elements for a cloud-streamed conference experience
+
+* Added multiplayer interactions on top Photon Pun 2
+
+</td>
+<td>Dec. 2020</td>
+</tr>
+
+  
 </tbody>
 </table>
 
-Note that only one column is allowed to grow.
+## <a href="https://github.com/LukasKastern/zig-patch">Project - Zig Patch</a>
 
-## Forms
+This is one of my favourites. I created this project with the goal in mind of integrating it into Journee's tec stack. 
+Sadly during my time at Journee we didn't find time for this.
 
-Here are some buttons:
+Zig-Patch is a tool that creates and applies binary patches of game builds. It is based on the <a href="https://docs.itch.ovh/wharf/master/">wharf spec</a>.
 
-<nav>
-    <button>Reset</button>
-    <button>Save</button>
-</nav>
+It simply tries to find 64kb blocks that didn't changed inbetween two versions. 
+If it finds a matching block in the previous build it can use that instead of serializing the data.
 
-And inputs:
+To make the patching process as fast as possible I used async-io to read / write data while worker threads handle diffing and compression or decompression of changed blocks.
 
-<form class="grid">
-<label>First name <input type="text" placeholder="Placeholder..." /></label>
-<label>Last name <input type="text" placeholder="Text goes here..." /></label>
-<label>Age <input type="text" value="30" /></label>
-</form>
+### Showcase
 
-## Grids
+In the following video I build two versions of Unreal's lyra project. The only difference being a change to a single level.
 
-Add the `grid` class to a container to divide up the horizontal space evenly for the cells.
-Not that it maintains the monospace, so the total width might not be 100%.
-Here are six grids with increasing cell count:
+The patch in total is: xmb big, was created in x seconds, and took x seconds to be applied.
 
-<div class="grid"><input readonly value="1" /></div>
-<div class="grid"><input readonly value="1" /><input readonly value="2" /></div>
-<div class="grid"><input readonly value="1" /><input readonly value="2" /><input readonly value="3" /></div>
-<div class="grid"><input readonly value="1" /><input readonly value="2" /><input readonly value="3" /><input readonly value="4" /></div>
-<div class="grid"><input readonly value="1" /><input readonly value="2" /><input readonly value="3" /><input readonly value="4" /><input readonly value="5" /></div>
-<div class="grid"><input readonly value="1" /><input readonly value="2" /><input readonly value="3" /><input readonly value="4" /><input readonly value="5" /><input readonly value="6" /></div>
+PUT LYRA EXAMPLE VIDEO HERE
 
-If we want one cell to fill the remainder, we set `flex-grow: 1;` for that particular cell.
+## <a href="https://store.steampowered.com/app/1095480/Operation_Valor/"> Project - Operation Valor</a>
 
-<div class="grid"><input readonly value="1" /><input readonly value="2" /><input readonly value="3!" style="flex-grow: 1;" /><input readonly value="4" /><input readonly value="5" /><input readonly value="6" /></div>
+Operation Valor is a 54 player Unity multiplayer game that I built with my two co-founders at One Dawn Studios.
 
-## ASCII Drawings
+<iframe src="https://www.youtube.com/embed/tTHvGN8cRio?si=Dw-u7VjrsbcZ1QvN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-We can draw in `<pre>` tags using [box-drawing characters](https://en.wikipedia.org/wiki/Box-drawing_characters):
 
-```
-╭─────────────────╮
-│ MONOSPACE ROCKS │
-╰─────────────────╯
-```
+### Multiplayer
+When we started working on the Project Unity didn't really have a solution for non-casual Multiplayer games.
+But luckily for us Unity just released their <a href="https://github.com/Unity-Technologies/FPSSample">fps sample</a> which we then used as a base of the Project. 
 
-To have it stand out a bit more, we can wrap it in a `<figure>` tag, and why not also add a `<figcaption>`.
+Of course the fps sample is rather opionated so we had to tweak / change a lot of things.
 
-<figure>
-<pre>
-┌───────┐ ┌───────┐ ┌───────┐
-│Actor 1│ │Actor 2│ │Actor 3│
-└───┬───┘ └───┬───┘ └───┬───┘
-    │         │         │    
-    │         │  msg 1  │    
-    │         │────────►│    
-    │         │         │    
-    │  msg 2  │         │    
-    │────────►│         │    
-┌───┴───┐ ┌───┴───┐ ┌───┴───┐
-│Actor 1│ │Actor 2│ │Actor 3│
-└───────┘ └───────┘ └───────┘</pre>
-<figcaption>Example: Message passing.</figcaption>
-</figure>
+But Unity then released Netcode for DOTS which we then started migrating towards.
 
-Let's go wild and draw a chart!
+## <a href="https://github.com/LukasKastern/vk-backbuffer-capture">Project - vk-backbuffer-capture</a>
 
-<figure><pre>
-                      Things I Have
-                                              
-    │                                     ████ Usable
-15  │
-    │                                     ░░░░ Broken
-    │
-12  │             ░            
-    │             ░            
-    │   ░         ░              
- 9  │   ░         ░              
-    │   ░         ░              
-    │   ░         ░                    ░
- 6  │   █         ░         ░          ░
-    │   █         ░         ░          ░
-    │   █         ░         █          ░
- 3  │   █         █         █          ░
-    │   █         █         █          ░
-    │   █         █         █          ░
- 0  └───▀─────────▀─────────▀──────────▀─────────────
-      Socks     Jeans     Shirts   USB Drives
-</pre></figure>
+This project originated by the need for low latency frame capturing of games running under proton during my time at Journee.
 
-## Media
+The core of the project is a vulkan layer that is loaded by the vulkan loader during game startup.
 
-Media objects are supported, like images and video:
+A client that wants to get the frames of the game can then use the SDK that is part of the project.
 
-![A room in an old French castle (2024)](castle.jpg)
-
-![[The Center of the Web (1914), Wikimedia](https://en.wikisource.org/wiki/Page:The_Center_of_the_Web_(1914).webm/11)](https://upload.wikimedia.org/wikipedia/commons/e/e0/The_Center_of_the_Web_%281914%29.webm)
-
-They extend to the width of the page, and add appropriate padding in the bottom to maintain the monospace grid.
-
-## Discussion
-
-That's it for now.
-I've very much enjoyed making this, pushing my CSS chops and having a lot of fun with the design.
-If you like it or even decide to use it, please [let me know](https://x.com/owickstrom).
-
-The full source code is here: [github.com/owickstrom/the-monospace-web](https://github.com/owickstrom/the-monospace-web)
-
-Finally, a massive shout-out to [U.S. Graphics Company](https://x.com/usgraphics) for all the inspiration.
+This SDK then communicates with the target app using a shared memory object. 
+The frames are exported using opaque_fd handles and can be imported by the client without having to move the data to the CPU.

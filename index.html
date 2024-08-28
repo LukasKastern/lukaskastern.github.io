@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Oskar Wickström" />
-  <meta name="dcterms.date" content="2024-08-26" />
-  <title>The Monospace Web</title>
+  <meta name="author" content="Lukas Kastern" />
+  <meta name="dcterms.date" content="2024-08-28" />
+  <title>Lukas’s Portfolio</title>
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="index.css" />
 </head>
@@ -14,20 +14,19 @@
 <table class="header">
   <tr>
     <td colspan="2" rowspan="2" class="width-auto">
-      <h1 class="title">The Monospace Web</h1>
-      <span class="subtitle">A minimalist design exploration</span>
+      <h1 class="title">Lukas’s Portfolio</h1>
+      <span class="subtitle">Self-taught Systems Developer</span>
     </td>
     <th>Version</th>
     <td class="width-min">v0.1.0</td>
   </tr>
   <tr>
     <th>Updated</th>
-    <td class="width-min">2024-08-26</td>
+    <td class="width-min">2024-08-28</td>
   </tr>
   <tr>
     <th class="width-min">Author</th>
-    <td class="width-auto"><a href="https://wickstrom.tech"><cite>Oskar
-Wickström</cite></a></td>
+    <td class="width-auto"><a href="https://github.com/LukasKastern"><cite>Lukas Kastern</cite></a></td>
     <th class="width-min">License</th>
     <td>MIT</td>
   </tr>
@@ -36,283 +35,153 @@ Wickström</cite></a></td>
 <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">Contents</h2>
 <ul class="incremental">
-<li><a href="#introduction" id="toc-introduction">Introduction</a></li>
-<li><a href="#the-basics" id="toc-the-basics">The Basics</a></li>
-<li><a href="#lists" id="toc-lists">Lists</a></li>
-<li><a href="#tables" id="toc-tables">Tables</a></li>
-<li><a href="#forms" id="toc-forms">Forms</a></li>
-<li><a href="#grids" id="toc-grids">Grids</a></li>
-<li><a href="#ascii-drawings" id="toc-ascii-drawings">ASCII
-Drawings</a></li>
-<li><a href="#media" id="toc-media">Media</a></li>
-<li><a href="#discussion" id="toc-discussion">Discussion</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#project---zig-patch"><a href="https://github.com/LukasKastern/zig-patch">Project - Zig Patch</a></a><ul class="incremental">
+<li><a href="#showcase">Showcase</a></li>
+</ul></li>
+<li><a href="#project---operation-valor"><a href="https://store.steampowered.com/app/1095480/Operation_Valor/"> Project - Operation Valor</a></a><ul class="incremental">
+<li><a href="#multiplayer">Multiplayer</a></li>
+</ul></li>
+<li><a href="#project---vk-backbuffer-capture"><a href="https://github.com/LukasKastern/vk-backbuffer-capture">Project - vk-backbuffer-capture</a></a></li>
 </ul>
 </nav>
 <h2 id="introduction">Introduction</h2>
-<p>Monospace fonts are dear to many of us. Some find them more readable,
-consistent, and beautiful, than their proportional alternatives. Maybe
-we’re just brainwashed from spending years in terminals? Or are we
-hopelessly nostalgic? I’m not sure. But I like them, and that’s why I
-started experimenting with all-monospace Web.</p>
-<p>On this page, I use a monospace grid to align text and draw diagrams.
-It’s generated from a simple Markdown document (using Pandoc), and the
-CSS and a tiny bit of Javascript renders it on the grid. The page is
-responsive, shrinking in character-sized steps. Standard elements should
-<em>just work</em>, at least that’s the goal. It’s semantic HTML,
-rendered as if we were back in the 70s.</p>
-<p>All right, but is this even a good idea? It’s a technical and
-creative challenge and I like the aestethic. If you’d like to use it,
-feel free to fork or copy the bits you need, respecting the license. I
-might update it over time with improvements and support for more
-standard elements.</p>
-<h2 id="the-basics">The Basics</h2>
-<p>This document uses a few extra classes here and there, but mostly
-it’s just markup. This, for instance, is a regular paragraph.</p>
-<p>Look at this horizontal break:</p>
-<hr>
-<p>Lovely. We can hide stuff in the <code>&lt;details</code>&gt;
-element:</p>
-<details>
-<summary>
-A short summary of the contents
-</summary>
-<p>
-Hidden gems.
-</p>
-</details>
-<h2 id="lists">Lists</h2>
-<p>This is a plain old bulleted list:</p>
-<ul class="incremental">
-<li>Banana</li>
-<li>Paper boat</li>
-<li>Cucumber</li>
-<li>Rocket</li>
-</ul>
-<p>Ordered lists look pretty much as you’d expect:</p>
-<ol class="incremental" type="1">
-<li>Goals</li>
-<li>Motivations
-<ol class="incremental" type="1">
-<li>Intrinsic</li>
-<li>Extrinsic</li>
-</ol></li>
-<li>Second-order effects</li>
-</ol>
-<p>It’s nice to visualize trees. This is a regular unordered list with a
-<code>tree</code> class:</p>
-<ul class="tree">
-<li>
-<p style="margin: 0;">
-<strong>/dev/nvme0n1p2</strong>
-</p>
-<ul class="incremental">
-<li>usr
-<ul class="incremental">
-<li>local<br />
-</li>
-<li>share<br />
-</li>
-<li>libexec<br />
-</li>
-<li>include<br />
-</li>
-<li>sbin<br />
-</li>
-<li>src<br />
-</li>
-<li>lib64<br />
-</li>
-<li>lib<br />
-</li>
-<li>bin<br />
-</li>
-<li>games
-<ul class="incremental">
-<li>solitaire</li>
-<li>snake</li>
-<li>tic-tac-toe</li>
-</ul></li>
-<li>media<br />
-</li>
-</ul></li>
-<li>media<br />
-</li>
-<li>run<br />
-</li>
-<li>tmp</li>
-</ul>
-</li>
-</ul>
-<h2 id="tables">Tables</h2>
-<p>We can use regular tables that automatically adjust to the monospace
-grid. They’re responsive.</p>
+<p>Welcome to my page! My name’s Lukas. I’m a self taught Systems Developer located in Berlin, Germany. On this site you can find my past experience and some of the projects I’ve worked on.</p>
+<h2 id="experience">Experience</h2>
 <table>
 <thead>
 <tr>
 <th class="width-min">
-Name
-</th>
-<th class="width-auto">
-Dimensions
+Company
 </th>
 <th class="width-min">
-Position
+Role
+</th>
+<th class="width-auto">
+Description
+</th>
+<th class="width-min">
+End Date
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-Boboli Obelisk
+<a href="https://waitlist.highscore.com/">Highscore</a>
 </td>
 <td>
-1.41m × 1.41m × 4.87m
+Software Engineer
 </td>
 <td>
-43°45’50.78”N 11°15’3.34”E
+<ul class="incremental">
+<li><p>Implemented SPS/PSS h264 field parsing</p></li>
+<li>Added windows audio capturing, encoding, streaming and playback to existing cloud gaming stack
+</td>
+<td>
+Present
+</td>
+</tr></li>
+</ul>
+<tr>
+<td>
+One Dawn Studios, LLC
+</td>
+<td>
+Co-Founder
+</td>
+<td>
+<ul class="incremental">
+<li><p>Developed gameplay code as the sole software developer on top of Unity’s data-oriented technology stack</p></li>
+<li><p>Build various tools to aid level designers in findings and optimizing performance hotspots</p></li>
+<li><p>Used azure and playfab to integrate player profiles, economy (in-game items), matchmaking and container based game servers</p></li>
+<li><p>Customized various Unity packages to workaround and fix bugs in the experimental data-oriented stack</p></li>
+<li>Created replay system on top of Unity’s Netcode allowing players to rewatch matches
+</td>
+<td>
+Present
+</td>
+</tr></li>
+</ul>
+<tr>
+<td>
+<a href="https://www.journee.ai/">Journee
+</td>
+<td>
+Systems Developer
+</td>
+<td>
+<ul class="incremental">
+<li><p>Debugged and patches issues in wine proton</p></li>
+<li><p>Build <a href="https://github.com/AvaloniaUI/Avalonia">AvaloniaUI</a> based tool to simplify artists/developer workflows on the platform</p></li>
+<li><p>Created engine agnostic SDK for games running on our platform</p></li>
+<li>Developed cross-platform streamer application over the web-rtc protocol
+<ul class="incremental">
+<li>Hardware encoder integrations</li>
+<li>Video capturing using DLL injection and detouring</li>
+</ul></li>
+<li><p>Designed and implemented an eventual consistent multiplayer stack for non-competetive games with client authority</p></li>
+<li>Built Unreal plugin to easily allow reusing features across projects
+<ul class="incremental">
+<li>Video areas</li>
+<li>Character controller</li>
+<li>Netcode</li>
+<li>Artist tools</li>
+<li>etc</li>
+</ul></li>
+<li><p>Supported the development of various projects built for clients such as BMW, Bitkom and H&amp;M</p></li>
+<li><p>Implemented Unreal integration for <a href="https://www.photonengine.com/realtime">Photon Realtime</a></p></li>
+<li><p>Ported existing conference experience stack from Unity to Unreal</p></li>
+</ul>
+</td>
+<td>
+Aug. 2023
 </td>
 </tr>
 <tr>
 <td>
-Pyramid of Khafre
+<a href="https://www.journee.ai/">Journee
 </td>
 <td>
-215.25m × 215.25m × 136.4m
+Software Dev Intern
 </td>
 <td>
-29°58’34”N 31°07’51”E
+<ul class="incremental">
+<li><p>Debugged bitrate and encoding related issues in Unity’s render streaming stack</p></li>
+<li><p>Evaluated and integrated various Unity video playback plugins</p></li>
+<li><p>Implemented content elements for a cloud-streamed conference experience</p></li>
+<li><p>Added multiplayer interactions on top Photon Pun 2</p></li>
+</ul>
+</td>
+<td>
+Dec. 2020
 </td>
 </tr>
 </tbody>
 </table>
-<p>Note that only one column is allowed to grow.</p>
-<h2 id="forms">Forms</h2>
-<p>Here are some buttons:</p>
-<nav>
-<button>
-Reset
-</button>
-<button>
-Save
-</button>
-</nav>
-<p>And inputs:</p>
-<form class="grid">
-<label>First name
-<input type="text" placeholder="Placeholder..." /></label> <label>Last
-name <input type="text" placeholder="Text goes here..." /></label>
-<label>Age <input type="text" value="30" /></label>
-</form>
-<h2 id="grids">Grids</h2>
-<p>Add the <code>grid</code> class to a container to divide up the
-horizontal space evenly for the cells. Not that it maintains the
-monospace, so the total width might not be 100%. Here are six grids with
-increasing cell count:</p>
-<div class="grid">
-<input readonly value="1" />
-</div>
-<div class="grid">
-<input readonly value="1" /><input readonly value="2" />
-</div>
-<div class="grid">
-<input readonly value="1" /><input readonly value="2" /><input readonly value="3" />
-</div>
-<div class="grid">
-<input readonly value="1" /><input readonly value="2" /><input readonly value="3" /><input readonly value="4" />
-</div>
-<div class="grid">
-<input readonly value="1" /><input readonly value="2" /><input readonly value="3" /><input readonly value="4" /><input readonly value="5" />
-</div>
-<div class="grid">
-<input readonly value="1" /><input readonly value="2" /><input readonly value="3" /><input readonly value="4" /><input readonly value="5" /><input readonly value="6" />
-</div>
-<p>If we want one cell to fill the remainder, we set
-<code>flex-grow: 1;</code> for that particular cell.</p>
-<div class="grid">
-<input readonly value="1" /><input readonly value="2" /><input readonly value="3!" style="flex-grow: 1;" /><input readonly value="4" /><input readonly value="5" /><input readonly value="6" />
-</div>
-<h2 id="ascii-drawings">ASCII Drawings</h2>
-<p>We can draw in <code>&lt;pre&gt;</code> tags using <a
-href="https://en.wikipedia.org/wiki/Box-drawing_characters">box-drawing
-characters</a>:</p>
-<pre><code>╭─────────────────╮
-│ MONOSPACE ROCKS │
-╰─────────────────╯</code></pre>
-<p>To have it stand out a bit more, we can wrap it in a
-<code>&lt;figure&gt;</code> tag, and why not also add a
-<code>&lt;figcaption&gt;</code>.</p>
-<figure>
-<pre>
-┌───────┐ ┌───────┐ ┌───────┐
-│Actor 1│ │Actor 2│ │Actor 3│
-└───┬───┘ └───┬───┘ └───┬───┘
-    │         │         │    
-    │         │  msg 1  │    
-    │         │────────►│    
-    │         │         │    
-    │  msg 2  │         │    
-    │────────►│         │    
-┌───┴───┐ ┌───┴───┐ ┌───┴───┐
-│Actor 1│ │Actor 2│ │Actor 3│
-└───────┘ └───────┘ └───────┘</pre>
-<figcaption>
-Example: Message passing.
-</figcaption>
-</figure>
-<p>Let’s go wild and draw a chart!</p>
-<figure>
-<pre>
-                      Things I Have
-                                              
-    │                                     ████ Usable
-15  │
-    │                                     ░░░░ Broken
-    │
-12  │             ░            
-    │             ░            
-    │   ░         ░              
- 9  │   ░         ░              
-    │   ░         ░              
-    │   ░         ░                    ░
- 6  │   █         ░         ░          ░
-    │   █         ░         ░          ░
-    │   █         ░         █          ░
- 3  │   █         █         █          ░
-    │   █         █         █          ░
-    │   █         █         █          ░
- 0  └───▀─────────▀─────────▀──────────▀─────────────
-      Socks     Jeans     Shirts   USB Drives
-</pre>
-</figure>
-<h2 id="media">Media</h2>
-<p>Media objects are supported, like images and video:</p>
-<figure>
-<img src="castle.jpg" alt="A room in an old French castle (2024)" />
-<figcaption aria-hidden="true">A room in an old French castle
-(2024)</figcaption>
-</figure>
-<figure>
-<video
-src="https://upload.wikimedia.org/wikipedia/commons/e/e0/The_Center_of_the_Web_%281914%29.webm"
-controls=""><a
-href="https://upload.wikimedia.org/wikipedia/commons/e/e0/The_Center_of_the_Web_%281914%29.webm">The
-Center of the Web (1914), Wikimedia</a></video>
-<figcaption aria-hidden="true"><a
-href="https://en.wikisource.org/wiki/Page:The_Center_of_the_Web_(1914).webm/11">The
-Center of the Web (1914), Wikimedia</a></figcaption>
-</figure>
-<p>They extend to the width of the page, and add appropriate padding in
-the bottom to maintain the monospace grid.</p>
-<h2 id="discussion">Discussion</h2>
-<p>That’s it for now. I’ve very much enjoyed making this, pushing my CSS
-chops and having a lot of fun with the design. If you like it or even
-decide to use it, please <a href="https://x.com/owickstrom">let me
-know</a>.</p>
-<p>The full source code is here: <a
-href="https://github.com/owickstrom/the-monospace-web">github.com/owickstrom/the-monospace-web</a></p>
-<p>Finally, a massive shout-out to <a
-href="https://x.com/usgraphics">U.S. Graphics Company</a> for all the
-inspiration.</p>
+<h2 id="project---zig-patch"><a href="https://github.com/LukasKastern/zig-patch">Project - Zig Patch</a></h2>
+<p>This is one of my favourites. I created this project with the goal in mind of integrating it into Journee’s tec stack. Sadly during my time at Journee we didn’t find time for this.</p>
+<p>Zig-Patch is a tool that creates and applies binary patches of game builds. It is based on the <a href="https://docs.itch.ovh/wharf/master/">wharf spec</a>.</p>
+<p>It simply tries to find 64kb blocks that didn’t changed inbetween two versions. If it finds a matching block in the previous build it can use that instead of serializing the data.</p>
+<p>To make the patching process as fast as possible I used async-io to read / write data while worker threads handle diffing and compression or decompression of changed blocks.</p>
+<h3 id="showcase">Showcase</h3>
+<p>In the following video I build two versions of Unreal’s lyra project. The only difference being a change to a single level.</p>
+<p>The patch in total is: xmb big, was created in x seconds, and took x seconds to be applied.</p>
+<p>PUT LYRA EXAMPLE VIDEO HERE</p>
+<h2 id="project---operation-valor"><a href="https://store.steampowered.com/app/1095480/Operation_Valor/"> Project - Operation Valor</a></h2>
+<p>Operation Valor is a 54 player Unity multiplayer game that I built with my two co-founders at One Dawn Studios.</p>
+<iframe src="https://www.youtube.com/embed/tTHvGN8cRio?si=Dw-u7VjrsbcZ1QvN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+<h3 id="multiplayer">Multiplayer</h3>
+<p>When we started working on the Project Unity didn’t really have a solution for non-casual Multiplayer games. But luckily for us Unity just released their <a href="https://github.com/Unity-Technologies/FPSSample">fps sample</a> which we then used as a base of the Project.</p>
+<p>Of course the fps sample is rather opionated so we had to tweak / change a lot of things.</p>
+<p>But Unity then released Netcode for DOTS which we then started migrating towards.</p>
+<h2 id="project---vk-backbuffer-capture"><a href="https://github.com/LukasKastern/vk-backbuffer-capture">Project - vk-backbuffer-capture</a></h2>
+<p>This project originated by the need for low latency frame capturing of games running under proton during my time at Journee.</p>
+<p>The core of the project is a vulkan layer that is loaded by the vulkan loader during game startup.</p>
+<p>A client that wants to get the frames of the game can then use the SDK that is part of the project.</p>
+<p>This SDK then communicates with the target app using a shared memory object. The frames are exported using opaque_fd handles and can be imported by the client without having to move the data to the CPU.</p>
   <div class="debug-grid"></div>
   <script src="index.js"></script>
 </body>
