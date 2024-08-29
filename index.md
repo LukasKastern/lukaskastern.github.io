@@ -11,7 +11,7 @@ version: v0.1.2
 
 ## Introduction
 
-Welcome to my page! My name's Lukas. I'm a self taught Systems Developer located in Berlin, Germany. 
+Welcome to my page! My name's Lukas. I'm a self-taught Systems Developer located in Berlin, Germany. 
 On this site you can find my past experience and some of the projects I've worked on. 
 
 ## Experience
@@ -43,9 +43,9 @@ On this site you can find my past experience and some of the projects I've worke
     <td>
 * Developed gameplay code as the sole software developer on top of Unity's data-oriented technology stack
 
-* Build various tools to aid level designers in findings and optimizing performance hotspots
+* Built various tools to aid level designers in finding and optimizing performance hotspots
 
-* Used azure and playfab to integrate player profiles, economy (in-game items), matchmaking and container based game servers
+* Used Azure and Playfab to integrate player profiles, economy (in-game items), matchmaking and container based game servers
 
 * Customized various Unity packages to workaround and fix bugs in the experimental data-oriented stack
 
@@ -68,7 +68,7 @@ On this site you can find my past experience and some of the projects I've worke
   * Hardware encoder integrations
   * Video capturing using DLL injection and detouring
 
-* Designed and implemented an eventual consistent multiplayer stack for non-competetive games with client authority
+* Designed and implemented an eventual consistent multiplayer stack for non-competitive games with client authority
 
 * Built Unreal plugin to easily allow reusing features across projects
   * Video areas
@@ -114,7 +114,7 @@ Sadly during my time at Journee we didn't find time for this.
 
 Zig-Patch is a tool that creates and applies binary patches of game builds. It is based on the <a href="https://docs.itch.ovh/wharf/master/">wharf spec</a>.
 
-It simply tries to find 64kb blocks that didn't changed inbetween two versions. 
+It simply tries to find 64kb blocks that didn't change inbetween two versions. 
 If it finds a matching block in the previous build it can use that instead of serializing the data.
 
 To make the patching process as fast as possible I used async-io to read / write data while worker threads handle diffing and compression or decompression of changed blocks.
@@ -152,7 +152,7 @@ The core of the project is a vulkan layer that is loaded by the vulkan loader du
 A client that wants to get the frames of the game can then use the SDK that is part of the project.
 
 This SDK then communicates with the target app using a shared memory object. 
-The frames are exported using opaque_fd handles and can be imported by the client without having to move the data to the CPU.
+The frames are exported using opaque file descriptor handles and can be imported by the client without having to move the data to the CPU.
 
 ## Project - Structure 2D (<a href="https://github.com/LukasKastern/structure-2d">github</a>)
 
