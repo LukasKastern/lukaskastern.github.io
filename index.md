@@ -6,7 +6,7 @@ author-url: "https://github.com/LukasKastern"
 date: 2024-08-29
 lang: en
 toc-title: Contents
-version: v0.1.1
+version: v0.1.2
 ---
 
 ## Introduction
@@ -58,7 +58,7 @@ On this site you can find my past experience and some of the projects I've worke
   <td><a href="https://www.journee.ai/">Journee</td>
   <td>Systems Developer</td>
   <td>
-* Debugged and patches issues in wine proton
+* Debugged and patched issues in wine proton
 
 * Build <a href="https://github.com/AvaloniaUI/Avalonia">AvaloniaUI</a> based tool to simplify artists/developer workflows on the platform
 
