@@ -114,7 +114,7 @@ Sadly during my time at Journee we didn't find time for this.
 
 Zig-Patch is a tool that creates and applies binary patches of game builds. It is based on the <a href="https://docs.itch.ovh/wharf/master/">wharf spec</a>.
 
-It simply tries to find 64kb blocks that didn't change inbetween two versions. 
+It simply tries to find 64kb blocks that didn't change in between two versions. 
 If it finds a matching block in the previous build it can use that instead of serializing the data.
 
 To make the patching process as fast as possible I used async-io to read / write data while worker threads handle diffing and compression or decompression of changed blocks.
@@ -123,8 +123,8 @@ To make the patching process as fast as possible I used async-io to read / write
 
 In the following video I built two versions of Unreal's lyra project. The only difference being a change to a single level.
 
-The build of the lyra project was 872mb in total. 
-The patch was created in 0.46 seconds, was 5.65 mb big and took 1.23 seconds to be applied.
+The build of the lyra project was 872 MB in total. 
+The patch was created in 0.46 seconds, was 5.65 MB large and took 1.23 seconds to be applied.
 
 <iframe src="https://www.youtube.com/embed/IK1V3sCDjss?si=mJBppYh6jil-S7RW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
