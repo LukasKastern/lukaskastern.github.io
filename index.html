@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Lukas Kastern" />
-  <meta name="dcterms.date" content="2024-08-28" />
+  <meta name="dcterms.date" content="2024-08-29" />
   <title>Lukas’s Portfolio</title>
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="index.css" />
@@ -18,32 +18,27 @@
       <span class="subtitle">Self-taught Systems Developer</span>
     </td>
     <th>Version</th>
-    <td class="width-min">v0.1.0</td>
+    <td class="width-min">v0.1.1</td>
   </tr>
   <tr>
     <th>Updated</th>
-    <td class="width-min">2024-08-28</td>
+    <td class="width-min">2024-08-29</td>
   </tr>
-  <tr>
-    <th class="width-min">Author</th>
-    <td class="width-auto"><a href="https://github.com/LukasKastern"><cite>Lukas Kastern</cite></a></td>
-    <th class="width-min">License</th>
-    <td>MIT</td>
-  </tr>
+
 </table>
-<label class="debug-toggle-label"><input type="checkbox" class="debug-toggle" /> Debug mode</label>
 <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">Contents</h2>
 <ul class="incremental">
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#experience">Experience</a></li>
-<li><a href="#project---zig-patch"><a href="https://github.com/LukasKastern/zig-patch">Project - Zig Patch</a></a><ul class="incremental">
+<li><a href="#project---zig-patch-github">Project - Zig Patch (<a href="https://github.com/LukasKastern/zig-patch">github</a>)</a><ul class="incremental">
 <li><a href="#showcase">Showcase</a></li>
 </ul></li>
-<li><a href="#project---operation-valor"><a href="https://store.steampowered.com/app/1095480/Operation_Valor/"> Project - Operation Valor</a></a><ul class="incremental">
+<li><a href="#project---operation-valor-steam">Project - Operation Valor (<a href="https://store.steampowered.com/app/1095480/Operation_Valor/">steam</a>)</a><ul class="incremental">
 <li><a href="#multiplayer">Multiplayer</a></li>
 </ul></li>
-<li><a href="#project---vk-backbuffer-capture"><a href="https://github.com/LukasKastern/vk-backbuffer-capture">Project - vk-backbuffer-capture</a></a></li>
+<li><a href="#project---vk-backbuffer-capture-github">Project - vk-backbuffer-capture (<a href="https://github.com/LukasKastern/vk-backbuffer-capture">github</a>)</a></li>
+<li><a href="#project---structure-2d-github">Project - Structure 2D (<a href="https://github.com/LukasKastern/structure-2d">github</a>)</a></li>
 <li><a href="#contact">Contact</a></li>
 <li><a href="#thanks">Thanks</a></li>
 </ul>
@@ -79,7 +74,7 @@ Software Engineer
 <td>
 <ul class="incremental">
 <li><p>Implemented SPS/PSS h264 field parsing</p></li>
-<li>Added windows audio capturing, encoding, streaming and playback to existing cloud gaming stack
+<li>Added audio capturing, encoding, streaming and playback to existing cloud gaming stack
 </td>
 <td>
 Present
@@ -162,16 +157,17 @@ Dec. 2020
 </tr>
 </tbody>
 </table>
-<h2 id="project---zig-patch"><a href="https://github.com/LukasKastern/zig-patch">Project - Zig Patch</a></h2>
-<p>This is one of my favourites. I created this project with the goal in mind of integrating it into Journee’s tec stack. Sadly during my time at Journee we didn’t find time for this.</p>
+<h2 id="project---zig-patch-github">Project - Zig Patch (<a href="https://github.com/LukasKastern/zig-patch">github</a>)</h2>
+<p>I created this project with the goal in mind of integrating it into Journee’s tec stack. Sadly during my time at Journee we didn’t find time for this.</p>
 <p>Zig-Patch is a tool that creates and applies binary patches of game builds. It is based on the <a href="https://docs.itch.ovh/wharf/master/">wharf spec</a>.</p>
 <p>It simply tries to find 64kb blocks that didn’t changed inbetween two versions. If it finds a matching block in the previous build it can use that instead of serializing the data.</p>
 <p>To make the patching process as fast as possible I used async-io to read / write data while worker threads handle diffing and compression or decompression of changed blocks.</p>
 <h3 id="showcase">Showcase</h3>
-<p>In the following video I build two versions of Unreal’s lyra project. The only difference being a change to a single level.</p>
-<p>The patch in total is: xmb big, was created in x seconds, and took x seconds to be applied.</p>
-<p>PUT LYRA EXAMPLE VIDEO HERE</p>
-<h2 id="project---operation-valor"><a href="https://store.steampowered.com/app/1095480/Operation_Valor/"> Project - Operation Valor</a></h2>
+<p>In the following video I built two versions of Unreal’s lyra project. The only difference being a change to a single level.</p>
+<p>The build of the lyra project was 872mb in total. The patch was created in 0.46 seconds, was 5.65 mb big and took 1.23 seconds to be applied.</p>
+<iframe src="https://www.youtube.com/embed/IK1V3sCDjss?si=mJBppYh6jil-S7RW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+<h2 id="project---operation-valor-steam">Project - Operation Valor (<a href="https://store.steampowered.com/app/1095480/Operation_Valor/">steam</a>)</h2>
 <p>Operation Valor is a 54 player Unity multiplayer game that I built with my two co-founders at One Dawn Studios.</p>
 <iframe src="https://www.youtube.com/embed/tTHvGN8cRio?si=Dw-u7VjrsbcZ1QvN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 </iframe>
@@ -179,11 +175,17 @@ Dec. 2020
 <p>When we started working on the Project Unity didn’t really have a solution for non-casual Multiplayer games. But luckily for us Unity just released their <a href="https://github.com/Unity-Technologies/FPSSample">fps sample</a> which we then used as a base of the Project.</p>
 <p>Of course the fps sample is rather opionated so we had to tweak / change a lot of things.</p>
 <p>But Unity then released Netcode for DOTS which we then started migrating towards.</p>
-<h2 id="project---vk-backbuffer-capture"><a href="https://github.com/LukasKastern/vk-backbuffer-capture">Project - vk-backbuffer-capture</a></h2>
+<h2 id="project---vk-backbuffer-capture-github">Project - vk-backbuffer-capture (<a href="https://github.com/LukasKastern/vk-backbuffer-capture">github</a>)</h2>
 <p>This project originated by the need for low latency frame capturing of games running under proton during my time at Journee.</p>
 <p>The core of the project is a vulkan layer that is loaded by the vulkan loader during game startup.</p>
 <p>A client that wants to get the frames of the game can then use the SDK that is part of the project.</p>
 <p>This SDK then communicates with the target app using a shared memory object. The frames are exported using opaque_fd handles and can be imported by the client without having to move the data to the CPU.</p>
+<h2 id="project---structure-2d-github">Project - Structure 2D (<a href="https://github.com/LukasKastern/structure-2d">github</a>)</h2>
+<p>Structure 2D was supposed to be a framework for creating 2D cell based games.</p>
+<p>But I never got to properly release it.</p>
+<p>It supported dynamic cell lighting, a save system, parallax background, map editing tools, procedural map generation as well as a collider system.</p>
+<p>Rendering happened in a single fullscreen rendering pass.</p>
+<p><img src="https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/7b1cfc78-c4b6-4584-8723-01c7524edaa5.webp"/></p>
 <h2 id="contact">Contact</h2>
 <p><a href="mailto:kasternlukas@gmail.com">Send a mail</a></p>
 <p><a href="https://github.com/LukasKastern">Github</a></p>
