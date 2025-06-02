@@ -30,10 +30,17 @@ On this site you can find my past experience and some of the projects I've worke
     <td><a href="https://waitlist.highscore.com/">Highscore</a></td>
     <td>Software Engineer</td>
     <td>
-* Implemented SPS/PSS h264 field parsing
+* Implemented network unit parsing for H264, HEVC and AV1
 
 * Added audio capturing, encoding, streaming and playback to existing cloud gaming stack
-    </td>
+
+* Developed various kernel drivers 
+
+* Created implementation of [sctp](https://datatracker.ietf.org/doc/html/rfc9260) with a focus on low latency and acceptance of packet loss
+
+* Wrote APIs for working with gaming platforms
+
+</td>
     <td>Present</td>
 </tr>
 
